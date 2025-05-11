@@ -1,0 +1,11 @@
+.domainName {
+  width: 15vw;
+  height: 7vh;
+  background-color: whitesmoke;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.3rem 0.1rem rgb(219, 113, 113);
+  font-family: roboto;
+}

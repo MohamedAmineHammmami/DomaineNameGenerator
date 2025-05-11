@@ -1,0 +1,9 @@
+.domainNameContainer {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+  margin-top: 3.5rem;
+}
