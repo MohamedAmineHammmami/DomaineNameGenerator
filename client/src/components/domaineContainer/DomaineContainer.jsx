@@ -1,22 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./domaineContainer.css";
 import DomaineName from "../availableDomaines/DomaineName";
 
-function DomaineContainer() {
+function DomaineContainer({ randomDomainNames, setChosenDomain }) {
   return (
     <div className="domainNameContainer">
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
-      <DomaineName />
+      {randomDomainNames.length > 0 &&
+        randomDomainNames.map((el, i) => (
+          <DomaineName {...{ el, setChosenDomain }} key={i} />
+        ))}
     </div>
   );
 }
